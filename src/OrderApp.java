@@ -57,11 +57,6 @@ public class OrderApp extends javax.swing.JFrame {
         saladCheck.setText("Salad = 5 $");
 
         kefirCheck.setText("Kefir = 2 $");
-        kefirCheck.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kefirCheckActionPerformed(evt);
-            }
-        });
 
         show_orders.setText("Show Orders");
         show_orders.addActionListener(new java.awt.event.ActionListener() {
@@ -77,17 +72,14 @@ public class OrderApp extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(kefirCheck)
-                            .addComponent(saladCheck)
-                            .addComponent(bologneseCheck)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(show_orders, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE))
-                        .addContainerGap(98, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(tboneCheck)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(kefirCheck)
+                        .addComponent(saladCheck)
+                        .addComponent(bologneseCheck)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(show_orders, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE))
+                    .addComponent(tboneCheck))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,10 +147,6 @@ public class OrderApp extends javax.swing.JFrame {
         showOrders();
 
     }//GEN-LAST:event_show_ordersActionPerformed
-
-    private void kefirCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kefirCheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kefirCheckActionPerformed
 
     /**
      * @param args the command line arguments
